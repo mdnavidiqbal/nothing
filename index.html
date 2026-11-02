@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Anniversary, My Love ❤️</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="petals" id="petals"></div>
+
+    <header class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">A BEAUTIFUL JOURNEY OF LOVE</span>
+        <h1>Happy Anniversary<br /><span>My Love(Dear Picchi) ❤️</span></h1>
+        <p>
+          Every moment with you is a beautiful memory I want to keep forever.
+        </p>
+
+        <div class="hero-date">03 November 2024 — Forever</div>
+
+        <button class="gold-btn" onclick="openModal('storyModal')">
+          Discover Our Story ✨
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro-section">
+        <span class="eyebrow">TO MY FOREVER PERSON</span>
+        <h2>Some Love Stories Are <span>Timeless</span></h2>
+        <p>
+          Among billions of people, life gave me you. And that is one of the
+          most beautiful gifts I could ever receive.
+        </p>
+      </section>
+
+      <section class="cards-section">
+        <div class="love-card">
+          <div class="card-icon">🌹</div>
+          <h3>Our Story</h3>
+          <p>Every love story is special. Ours is my favourite.</p>
+          <button onclick="openModal('storyModal')">Explore Story</button>
+        </div>
+
+        <div class="love-card">
+          <div class="card-icon">📸</div>
+          <h3>Our Memories</h3>
+          <p>Little moments that became my biggest treasures.</p>
+          <button onclick="openModal('memoryModal')">View Memories</button>
+        </div>
+
+        <div class="love-card">
+          <div class="card-icon">💌</div>
+          <h3>My Love Letter</h3>
+          <p>There are some feelings words can never fully express.</p>
+          <button onclick="openModal('letterModal')">Read My Letter</button>
+        </div>
+      </section>
+
+      <section class="journey-section">
+        <span class="eyebrow">EVERY SECOND MATTERS</span>
+        <h2>Our Journey Together</h2>
+        <div class="counter-box">
+          <div><strong id="days">0</strong><span>Days</span></div>
+          <div><strong id="hours">0</strong><span>Hours</span></div>
+          <div><strong id="minutes">0</strong><span>Minutes</span></div>
+          <div><strong id="seconds">0</strong><span>Seconds</span></div>
+        </div>
+        <p>Since 03 November 2024 ❤️</p>
+      </section>
+
+      <section class="surprise-section">
+        <div class="surprise-content">
+          <span class="eyebrow">A LITTLE SOMETHING FOR YOU</span>
+          <h2>Are You Ready for a <span>Surprise?</span></h2>
+          <p>I have one more thing to tell you...</p>
+          <button class="surprise-btn" onclick="openSurprise()">
+            Open Your Final Surprise 💖
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Made with endless love ❤️
+      <p>Forever Yours | 03.11.2024</p>
+    </footer>
+
+    <button class="music-btn" id="musicBtn" onclick="toggleMusic()">♫</button>
+
+    <audio id="bgMusic" loop>
+      <source src="music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- STORY MODAL -->
+    <div class="modal" id="storyModal">
+      <div class="modal-content">
+        <button class="close-btn" onclick="closeModal('storyModal')">×</button>
+        <span class="modal-icon">🌹</span>
+        <span class="eyebrow">OUR BEAUTIFUL BEGINNING</span>
+        <h2>Our Love Story</h2>
+        <p>
+          ০৩ নভেম্বর ২০২৪ — এমন একটি দিন, যেদিন আমার জীবনের গল্পে যুক্ত হয়েছিল
+          সবচেয়ে সুন্দর ও অর্থবহ একটি অধ্যায়। ❤️🌸
+        </p>
+        <p>
+          সেই দিন থেকেই জীবনের প্রতিটি ছোট ছোট মুহূর্ত হয়ে উঠেছে এক সুন্দর
+          পথচলার অংশ। আশা করি, ভালোবাসা, ধৈর্য আর অফুরন্ত সুখকে সঙ্গী করে আমরা
+          এভাবেই একসঙ্গে আমাদের জীবনের গল্প লিখে যাব, সারাজীবন। ❤️🌸
+        </p>
+        <div class="modal-footer">আমাদের গল্পের লেখা এখনো বাকি... ❤️♾️</div>
+      </div>
+    </div>
+
+    <!-- MEMORY MODAL -->
+    <div class="modal" id="memoryModal">
+      <div class="modal-content wide-modal">
+        <button class="close-btn" onclick="closeModal('memoryModal')">×</button>
+        <span class="eyebrow">LITTLE MOMENTS, BIG MEMORIES</span>
+        <h2>Our Beautiful Memories</h2>
+        <p>Every picture tells a little story.</p>
+
+        <div class="memory-grid">
+          <img
+            src="https://i.ibb.co.com/9HTysSpd/1793638932611.jpg"
+            alt="Romantic memory"
+          />
+          <img
+            src="https://i.ibb.co.com/bRC3MRVR/1793638932420.jpg"
+            alt="Couple memory"
+          />
+          <img
+            src="https://i.ibb.co.com/7Jkjfrd0/IMG-20240912-WA0001.jpg"
+            alt="Wedding memory"
+          />
+          <img
+            src="https://i.ibb.co.com/bgnvm892/1793639766168.jpg"
+            alt="Family memory"
+          />
+        </div>
+        <p class="modal-footer">
+          Replace these pictures with your own photos ❤️
+        </p>
+      </div>
+    </div>
+
+    <!-- LETTER MODAL -->
+    <div class="modal" id="letterModal">
+      <div class="modal-content letter-content">
+        <button class="close-btn" onclick="closeModal('letterModal')">×</button>
+        <span class="eyebrow"> আমাদের ভালোবাসার গল্পের এক সুন্দর সূচনা</span>
+        <h2>Dear Subu(Picchi) 💌</h2>
+
+        <div class="letter-text">
+          <p>My Love,</p>
+          <p>Happy Anniversary! ❤️</p>
+          <p>
+            দেখতে দেখতে কেটে গেল দুটি বছর। এই পথচলায় ছিল হাজারো হাসি, কিছু
+            অভিমান, ছোট ছোট ঝগড়া আর অসংখ্য ভালোবাসার মুহূর্ত। সবকিছুর পরেও
+            সবচেয়ে সুন্দর সত্য হলো, আমরা একে অপরের পাশে আছি। জীবনের কাছে খুব
+            বেশি কিছু চাওয়ার নেই, শুধু চাই—সময় যতই বদলাক, আমাদের ভালোবাসা যেন
+            কখনো না বদলায়। সুখে-দুঃখে, প্রতিটি কঠিন সময়ে যেন এভাবেই একে অপরের
+            হাত ধরে রাখতে পারি। আল্লাহ যেন আমাদের এই বন্ধন সারাজীবন অটুট রাখেন
+            এবং ভালোবাসা, শান্তি ও বরকতে আমাদের সংসার ভরিয়ে দেন। আমিন। 🤲 তোমাকে
+            নিয়েই আজকের সুখ, তোমাকে নিয়েই আগামীর স্বপ্ন। আজও তোমাকেই চাই,
+            আগামীকালও তোমাকেই চাই, সারাজীবন। ❤️♾️
+          </p>
+          <p>
+            আমার জীবনের অংশ হয়ে থাকার জন্য তোমাকে অসংখ্য ধন্যবাদ। ❤️ তোমার সঙ্গে
+            আরও অনেক সুন্দর স্মৃতি তৈরি করতে চাই, একসঙ্গে আরও অনেক হাসি, আনন্দ
+            আর ভালোবাসার মুহূর্ত কাটাতে চাই। জীবনের প্রতিটি আগামী দিন যেন আমাদের
+            জন্য আরও সুন্দর হয়ে ওঠে। ❤️🌸
+          </p>
+          <p>With all my love,</p>
+          <p class="signature">Forever Yours ❤️</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FINAL SURPRISE -->
+    <div class="surprise-overlay" id="surpriseOverlay">
+      <button class="close-surprise" onclick="closeSurprise()">×</button>
+      <div class="surprise-hearts" id="surpriseHearts"></div>
+
+      <div class="final-content" id="finalContent">
+        <div class="golden-heart">♥</div>
+        <span class="eyebrow">MY ONE AND ONLY</span>
+        <h1>Happy Anniversary<br /><span>My Love ❤️</span></h1>
+
+        <div class="final-image">
+          <img
+            src="https://i.ibb.co.com/bgnvm892/1793639766168.jpg"
+            alt="Romantic couple"
+          />
+        </div>
+
+        <h2>You Are My Favourite Forever</h2>
+        <p>
+          If I could choose again, in every lifetime, in every universe, I would
+          still choose you.
+        </p>
+        <p class="forever-text">03 November 2024 — ∞</p>
+        <div class="final-signature">Forever & Always ❤️</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
